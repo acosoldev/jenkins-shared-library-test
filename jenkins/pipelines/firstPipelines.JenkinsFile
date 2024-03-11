@@ -6,7 +6,7 @@ pipeline {
         stage('Example') {
             steps {
                 helloWorld() // From Old Man Shared Library
-                mySharedLibraryHelloWorld() // From My Shared Library
+                mySimpleHelloWorld() // From My Shared Library
             }
         }
     }
