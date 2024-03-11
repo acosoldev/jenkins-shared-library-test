@@ -11,7 +11,7 @@ pipeline {
         }
         stage('String Parameters Shared Lib Method') {
             steps {
-                myGreetingsUsingStrings('Jenkins', 'Monday') // From My Shared Library
+                myGreetingsUsingStrings("Jenkins", "Monday") // From My Shared Library
             }
         }
     }
