@@ -16,7 +16,7 @@ pipeline {
         }
         stage('MapConfig Parameters Shared Lib Method') {
             steps {
-                myGreetingsUsingStrings(dayOfWeek:"Thursday", name:"Juanito",) // From My Shared Library || MAPPED PARAMETERS
+                myGreetingsUsingStrings(dayOfWeek:"Thursday", name:"Juanito") // From My Shared Library || MAPPED PARAMETERS
             }
         }
     }
