@@ -1,0 +1,16 @@
+@Library(['jenkins-oldman-shared-library', 'my-shared-library']) _
+
+node {
+    stage('Simple Shared Lib Method') {
+        helloWorld()    // From Old Man Shared Library
+        myHelloWorld()  // From My Shared Library
+    }
+    stage('String Parameters Shared Lib Method') {
+        // Positional PARAMETERS
+        myGreetingsUsingStrings('Jenkins', 'Monday')
+    }
+    stage('MapConfig Parameters Shared Lib Method') {
+        // MapConfig  PARAMETERS
+        myGreetingsUsingMapConfig(dayOfWeek:'Thursday', name:'Juanito')
+    }
+}
