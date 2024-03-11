@@ -3,10 +3,10 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Parameters Example') {
             steps {
-                helloWorld() // From Old Man Shared Library
-                mySharedLibraryHelloWorld() // From My Shared Library
+                helloWorld()
+                mySharedLibraryHelloWorld()
             }
         }
     }
