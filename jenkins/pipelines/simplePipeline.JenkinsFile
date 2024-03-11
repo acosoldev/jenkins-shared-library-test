@@ -3,10 +3,15 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Simple Shared Lib Method') {
             steps {
                 helloWorld() // From Old Man Shared Library
-                mySimpleHelloWorld() // From My Shared Library
+                myHelloWorld() // From My Shared Library
+            }
+        }
+        stage('String Parameters Shared Lib Method') {
+            steps {
+                myGreetingsUsingStrings('Jenkins', 'Monday') // From My Shared Library
             }
         }
     }
